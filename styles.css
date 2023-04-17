@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-family: 'Overpass', sans-serif;
+  font-size: 16px;
+}
+
+/* typography */
+
+h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 1em 0 0.5em 0;
+}
+
+p,
+.message {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 22px;
+  color: #969fad;
+}
+
+.message {
+  display: inline-block;
+  color: #fc7614;
+  background-color: #262e38;
+  padding: 0.25em 0.5em;
+  margin-bottom: 0em;
+  border-radius: 22.5px;
+}
+
+.container-all {
+  width: 327px;
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  padding: 1.5em;
+  border-radius: 15px;
+}
+
+.star-icon-container {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #262e38;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5em;
+}
+
+.rating-btn,
+.submit {
+  font-family: inherit;
+  font-size: 0.785rem;
+  font-weight: 700;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #262e38;
+  color: #7c8798;
+  border: none;
+}
+
+.rating-btn:hover,
+.rating-btn:focus {
+  background: #7c8798;
+  color: #fff;
+}
+
+.rating-btn:active {
+  background: #fc7614;
+  color: #fff;
+}
+
+.submit {
+  letter-spacing: 1.8px;
+  background: #fc7614;
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 1em;
+  margin: 1.5em 0 1em;
+  border-radius: 22.5px;
+}
+
+.submit:hover,
+.submit:focus,
+.submit:active {
+  background: #fff;
+  color: #fc7614;
+}
+
+/* Thank you state */
+
+.thank-you-icon {
+  margin-top: 1em;
+}
+
+.thank-you-container {
+  position: absolute;
+  text-align: center;
+}
+
+.no-show {
+  display: none;
+}
+
+/* media query */
+
+@media (min-width: 600px) {
+  .container-all {
+    transform: scale(1.25);
+  }
+}
