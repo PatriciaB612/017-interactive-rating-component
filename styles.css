@@ -8,9 +8,6 @@ html {
 }
 
 body {
-  display: grid;
-  place-items: center;
-  height: 100vh;
   font-family: 'Overpass', sans-serif;
   font-size: 16px;
 }
@@ -44,6 +41,13 @@ p,
 
 .container-all {
   width: 327px;
+  height: 360px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
   background: radial-gradient(
     98.96% 98.96% at 50% 0%,
     #232a34 0%,
